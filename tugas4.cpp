@@ -56,17 +56,6 @@ int main() {
         mhs[n].nAkhir = 0.4 * mhs[n].nMid + 0.6 * mhs[n].nSemester;
         gotoxy(15, 8);
         cout << "Nilai Akhir    : " << mhs[n].nAkhir << endl;
-        
-         if (mhs[n].nAkhir >= 80)
-            mhs[n].nHuruf = 'A';
-        else if (mhs[n].nAkhir >= 70)
-            mhs[n].nHuruf = 'B';
-        else if (mhs[n].nAkhir >= 55)
-            mhs[n].nHuruf = 'C';
-        else if (mhs[n].nAkhir >= 40)
-            mhs[n].nHuruf = 'D';
-        else
-            mhs[n].nHuruf = 'E';
         gotoxy(15, 9);
         cout << "Nilai Huruf    : " << mhs[n].nHuruf << endl;
         gotoxy(14, 10);
@@ -78,14 +67,6 @@ int main() {
 
     system("cls");
     
-    cout << left << setw(5) << "No" 
-         << setw(15) << "NPM" 
-         << setw(25) << "Nama" 
-         << setw(15) << "Nilai Mid" 
-         << setw(18) << "Nilai Semester" 
-         << setw(15) << "Nilai Akhir" 
-         << setw(15) << "Nilai Huruf" << endl;
-    cout << "--------------------------------------------------------------------------------------------------------" << endl;
 
     for (int i = 1; i <= n; i++) {
         cout << left << setw(5) << i 
